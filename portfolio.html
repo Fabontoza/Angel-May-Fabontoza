@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>portfolio</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #7a1110;
+    }
+
+    header {
+      background-color: #e8d8c4;
+      padding: 25px 0;
+        }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 250px;
+      padding: 50px 30px 0;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 400px;
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 300px;
+      border: 10px solid #d9c2b2;
+      border-radius: 20px;
+    }
+
+    .card .text {
+      margin-top: 20px;
+      text-align: center;
+      color: #e8d8c4;
+    }
+
+    .card .text h2 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .card .text p {
+      margin-top: 5px;
+      font-size: 18px;
+      margin-bottom: -100px;
+    }
+
+    footer {
+  background-color: #7a0c0c;
+  color: #e8d8c4;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #e8d8c4;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  background-color: #e8d8c4;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  background-color: #7a1110;
+}
+.footer-links a.active {
+  background-color: #333;
+}
+
+    .footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  background-color: #7a0c0c;
+  color: white; 
+  border-top: 1px solid white;
+  margin-top: 100px; /* 👈 Pushes it downward */
+}
+.footer-links a.active::after,
+.footer-links a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+
+}
+.my-video {
+  border: 10px solid #d9c2b2;
+  border-radius: 12px; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+  </style>
+</head>
+<body>
+
+  <header></header>
+
+  <div class="gallery">
+    <div class="card">
+      <img src="image/port1.png" alt="Pig Image">
+      <div class="text">
+        <h2>Perspective</h2>
+        <p>This project shows how a stylized building was made step by step. It starts with simple blocky shapes and uses 3-point perspective to make it look 3D. Details, textures, and lines were added to shape the design. The colors follow the 60/30/10 rule mostly one main color, some secondary color, and a small pop of accent color. In the end, lighting and shadows were added to give it depth and a polished look, like something you'd see in a game or concept art.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <video class="my-video" width="400" autoplay muted loop playsinline>
+        <source src="video/portvid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="text">
+        <h2>Man</h2>
+        <p>I made a draft of a man jumping and drew each step of the movement by hand. Then, I put the drawings together to turn it into an animation that shows the jump in motion.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-nav">
+    <div class="footer-left">
+      <img src="image/logo.jpg" alt="Logo">
+      <span>ALL RIGHTS RESERVED.</span>
+    </div>
+
+    <div class="footer-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a class="active" href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>

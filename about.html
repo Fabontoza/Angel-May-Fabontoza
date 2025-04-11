@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #7a1110;
+        }
+        .about {
+            background-color: #7a1110;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .profile img {
+            width: 300px;
+            border-radius: 20px;
+        }
+
+        /* Info Section */
+        .info {
+            max-width: 650px;
+            text-align: left;
+            margin-top: -100px;
+
+        }
+        h2 {
+            font-size: 55px;
+            color: #e8d8c4;
+        }
+        .sentences {
+            font-size: 20px;
+        }
+
+        .name-box {
+            border: 2px solid white;
+            padding: 15px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 170px;
+            margin-top: -20px;
+            color: #e8d8c4;
+        }
+
+        .name-box h3 {
+            margin: 0;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7a1110;
+  padding: 10px 25px;
+  border-top: 2px solid #e8d8c4; 
+  font-family: 'Georgia', serif;
+}
+.footer-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-right: auto;
+    }
+
+    .footer-left img {
+      width: 50px;
+      border-radius: 50%;
+    }
+    .footer-right {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-right a {
+  background-color: #e8d8c4;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.footer-right a:hover, .footer-right a.active:hover {
+  background-color: #7a1110;
+  transform: scale(1.08);
+}
+.footer-right a.active {
+  background-color: #333;
+}
+.footer-right a:hover{
+    text-decoration: underline;
+}
+ 
+header{
+    background: #333;
+    color: #fff;
+    padding: 25px 0;
+    background-color:#e8d8c4; 
+}
+.line {
+    width: 100%; 
+    border-top: 2px solid #e8d8c4; 
+    margin-top: 25px;
+}
+        
+    </style>    
+</head>
+<body>
+    <header></header>
+    <section class="about">
+        <div class="container">
+            <div class="profile">
+                <img src="image/pic.jpg" alt="Profile Picture">
+            </div>
+            <div class="info">
+                <h2>About Me</h2>
+                <div class="name-box">
+                    <h3>ANGEL MAY M. FABONTOZA</h3>
+                </div>
+                <div class="sentences">
+                <p>I am a <strong>19-year-old</strong> student born on <strong>January 2, 2006</strong>, 
+                    from <strong>Quezon City, Philippines</strong>, currently pursuing a degree in 
+                    <strong>Information Technology</strong> at <strong>Our Lady of Fatima University</strong>. 
+                    Let's innovate today for a brighter tomorrow.
+                </p>
+                <p>I am a graduate of Batasan Hills National High School for Senior High, 
+                    Flora A. Ylagan High School for High School, and Doña Juana Elementary 
+                    School for Elementary.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-nav">
+        <div class="footer-left">
+          <img src="image/logo.jpg" alt="Logo">
+          <span>ALL RIGHTS RESERVED.</span>
+        </div>
+        <div class="footer-right">
+          <a href="home.html">Home</a>
+          <a  class="active" href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </footer>
+
+</body>
+</html>
